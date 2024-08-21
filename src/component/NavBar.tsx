@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -32,7 +33,10 @@ const navBarMenu = [
 export const NavBar = () => {
   return (
     <nav>
-      <div className="container flex justify-between items-center py-10">
+      <motion.div 
+      initial={{  opacity: 0,y:-50 }}
+      animate= {{opacity:1, y:0}}
+      className="container flex justify-between items-center py-10">
         {/* log section */}
         <div>
           <h1 className="text-2xl font-bold">The coding journey</h1>
@@ -55,7 +59,7 @@ export const NavBar = () => {
         </div>
         {/* mobile Hamburg section */}
         <div className="lg:hidden text-4xl"><IoMdMenu/></div>
-      </div>
+      </motion.div>
     </nav>
   );
 };
