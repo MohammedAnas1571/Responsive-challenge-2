@@ -1,6 +1,8 @@
 import Banner from "./component/Banner"
+import Banner2 from "./component/Banner2"
 import { Hero } from "./component/Hero"
 import { Services } from "./component/Services"
+import Subscribe from "./component/Subscribers"
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
     <Hero/>
     <Services/>
     <Banner/>
+    <Subscribe/>
+    <Banner2/>
   </main>
 
   )
